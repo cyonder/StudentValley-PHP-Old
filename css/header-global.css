@@ -1,0 +1,129 @@
+#container{
+    background-color: #FFFFFF;
+}
+
+#header{
+    background: -webkit-linear-gradient(180deg,#307FB7, #084F81);
+    background: -moz-linear-gradient(180deg,#307FB7, #084F81);
+    background: -ms-linear-gradient(180deg,#307FB7, #084F81);
+    background: -o-linear-gradient(180deg,#307FB7, #084F81);
+    background: linear-gradient(180deg,#307FB7, #084F81);
+
+
+    -webkit-box-shadow: 0 1px 2px #000000;
+    -moz-box-shadow: 0 1px 2px #000000;
+    box-shadow: 0 1px 2px #000000;
+}
+
+#header-wrapper{
+    height: 80px;
+    margin: auto; /* Centralize blue bar */
+    width: 996px; /* Fix the size of blue bar */
+}
+
+#header-a{
+    float: left;
+}
+
+#logo-wrapper{
+    margin-top: 5px;
+}
+
+#logo{
+    background: url("/images/Student-Valley-Logo-Big.png") no-repeat 0;
+    background-size: 340px 90px; /*  Need to reduce the size of logo */
+    cursor: pointer;
+    font-size: 70px; /* To make the logo appear */
+    letter-spacing: -0.080em; /* To wrap up the logo with anchor */
+    margin-left: -2px;  /* Remove unnecessary space on the left side of logo */
+}
+
+u{
+    left: -999999px;
+    position: relative;
+}
+
+#header-b{
+    float: right;
+}
+
+#login{
+
+}
+
+#login table{
+    color: #FFFFFF;
+    margin: 10px 0 10px 10px;
+    text-align: left;
+}
+
+#login table a{
+    color: #FFFFFF;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#login table a:hover{text-decoration: underline;}
+
+#login table th{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+#login table td{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+}
+
+.login-button{
+    background-color: #0E6AAB;
+    border: #307FB7 2px outset;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-input{
+    margin-right: 10px;
+    outline: none;
+    width: 155px;
+}
+
+.login-checkbox{
+    margin: 0 2px 0 0;
+    padding: 0;
+}
+
+.login-forgot{
+
+}
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+@-moz-document url-prefix(){
+    #login table th{
+        padding-bottom: 7px;
+    }
+
+    .login-button{
+        border-top-color: rgba(48, 124, 183, 0.2);
+        border-left-color: rgba(48, 124, 183, 0.2);
+        border-right-color: rgba(26, 68, 99, 0.6);
+        border-bottom-color: rgba(26, 68, 99, 0.6);
+        padding: 0.140em 2px;
+    }
+
+    .login-checkbox{
+        margin-top: 3px;
+    }
+}

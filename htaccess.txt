@@ -1,0 +1,27 @@
+# 0 ---- Turn Rewrite engine on
+RewriteEngine On 
+
+# 1 ---- Rewrite for profile.php
+RewriteRule ^profile/([0-9]+) profile.php?id=$1 [NC,L]  
+
+# 2 ---- Rewrite for groups
+RewriteRule ^group/([0-9]+)$ group/group.php?id=$1 [QSA,NC,L]
+RewriteRule ^group/([0-9]+)/members$ group/members.php?id=$1 [QSA,NC,L]
+RewriteRule ^group/([0-9]+)/manage$ group/manage.php?id=$1 [QSA,NC,L]
+RewriteRule ^group/([0-9]+)/search$ group/search.php?id=$1 [QSA,NC,L]
+
+# 3 ---- Rewrite for books
+RewriteRule ^book/([0-9]+)$ book/book.php?id=$1 [QSA,NC,L]
+
+# 4 ---- Establish a custom 404 file not found page
+ErrorDocument 404 /includes/404.php
+
+# 5 ---- Redirect 403 forbidden to custom made 404 page
+ErrorDocument 403 /includes/404.php
+
+# 6 ---- Prevent directory file listing in all of your folders
+Options -Indexes
+
+# 5 ---- Make pages render without their extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

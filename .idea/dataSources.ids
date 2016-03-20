@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="StudentValley" uuid="5cf81ca2-b9a5-4862-befe-de57f1855a9b">
+    <database-info product="MySQL" version="5.5.42-cll" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="studentv_main"/>
+    <table name="BOOKS" schema="" catalog="studentv_main" type="TABLE">
+      <column name="BOOK_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="BOOK_SCHOOL" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BOOK_DATE" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="BOOK_TYPE" sqlType="ENUM" precision="6" scale="0" nullable="true" jdbcType="1"/>
+      <column name="BOOK_TITLE" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BOOK_CONTENT" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="BOOK_PRICE" sqlType="TINYTEXT" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BOOK_OWNER" sqlType="TINYTEXT" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BOOK_PICTURE_ID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="J0RlZmF1bHQucG5nJw=="/>
+      <primary-key name="PRIMARY" columns="BOOK_ID"/>
+    </table>
+    <table name="COURSES" schema="" catalog="studentv_main" type="TABLE">
+      <column name="COURSE_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="COURSE_CODE" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="COURSE_NAME" sqlType="VARCHAR" precision="250" scale="0" nullable="false" jdbcType="12"/>
+      <column name="COURSE_SCHOOL" sqlType="VARCHAR" precision="250" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="COURSE_ID"/>
+    </table>
+    <table name="GROUPS" schema="" catalog="studentv_main" type="TABLE">
+      <column name="GROUP_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="GROUP_NAME" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="GROUP_TYPE" sqlType="ENUM" precision="7" scale="0" nullable="false" jdbcType="1"/>
+      <column name="GROUP_ADMIN" sqlType="TINYTEXT" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="GROUP_MEMBERS" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="GROUP_BANNED_MEMBERS" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="GROUP_CREATION_DATE" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="GROUP_PICTURE_ID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="J0RlZmF1bHQucG5nJw=="/>
+      <primary-key name="PRIMARY" columns="GROUP_ID"/>
+    </table>
+    <table name="PINS" schema="" catalog="studentv_main" type="TABLE">
+      <column name="PIN_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="PIN_AUTHOR" sqlType="TINYTEXT" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="PIN_GROUP" sqlType="TINYTEXT" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="PIN_CONTENT" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="PIN_VOTE" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="PIN_DATE" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="PIN_ID"/>
+    </table>
+    <table name="PIN_COMMENTS" schema="" catalog="studentv_main" type="TABLE">
+      <column name="COMMENT_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="COMMENT_AUTHOR" sqlType="TINYTEXT" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="COMMENT_GROUP" sqlType="TINYTEXT" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="COMMENT_PIN" sqlType="TINYTEXT" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="COMMENT_CONTENT" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="COMMENT_VOTE" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="COMMENT_DATE" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="COMMENT_ID"/>
+    </table>
+    <table name="REQUESTS" schema="" catalog="studentv_main" type="TABLE">
+      <column name="REQUEST_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="REQUEST_FROM" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="REQUEST_TO" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="REQUEST_DATE" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="REQUEST_ID"/>
+    </table>
+    <table name="SCHOOLS" schema="" catalog="studentv_main" type="TABLE">
+      <column name="SCHOOL_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="SCHOOL_NAME" sqlType="VARCHAR" precision="250" scale="0" nullable="false" jdbcType="12"/>
+      <column name="SCHOOL_SHORT_NAME" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="SCHOOL_CITY" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="SCHOOL_COUNTRY" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="SCHOOL_ADDRESS" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="SCHOOL_REGISTRATION_DATE" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="SCHOOL_TYPE" sqlType="ENUM" precision="11" scale="0" nullable="true" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="SCHOOL_ID"/>
+    </table>
+    <table name="USERS" schema="" catalog="studentv_main" type="TABLE">
+      <column name="USER_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="USER_FIRST_NAME" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="USER_LAST_NAME" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="USER_EMAIL" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="USER_PASSWORD" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12"/>
+      <column name="USER_DISPLAY_NAME" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="USER_SCHOOL" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12"/>
+      <column name="USER_PROGRAM" sqlType="VARCHAR" precision="250" scale="0" nullable="true" jdbcType="12"/>
+      <column name="USER_PHONE" sqlType="VARCHAR" precision="15" scale="0" nullable="true" jdbcType="12"/>
+      <column name="USER_WEBSITE" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="USER_CONNECTIONS" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="USER_COURSES" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="USER_GROUPS" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="USER_REGISTRATION_DATE" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="USER_PICTURE_ID" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="J0RlZmF1bHQucG5nJw=="/>
+      <primary-key name="PRIMARY" columns="USER_ID"/>
+    </table>
+  </data-source>
+</component>

@@ -1,0 +1,230 @@
+/*
+* This CSS file should be added pages, which doesn't have sidebar in it.
+*
+* This CSS file is for one column pages only.
+*
+* This CSS file contains the styles for pages that are gonna show up when user isn't logged in.
+*
+* In this CSS while styling, using general tags must be avoided. Because this file is used for
+* many other pages, as well. Otherwise, the pages are gonna be messed up.
+*
+* While styling, use unique id or class names before the general tags.
+*/
+
+/*************************************
+**************************************
+    0   -   LOGIN PAGE
+**************************************
+*************************************/
+
+#body-login{
+    margin-top: 20px;
+}
+
+#body-login-wrapper{
+    margin: auto; /* Centralize the page */
+    width: 996px; /* Fix the size of the page */
+}
+
+#logo-small-wrapper{
+    background: url("/images/Student-Valley-Logo-Small.png") no-repeat 0;
+    background-size: 100px 80px; /*  Need to reduce the size of logo */
+    height: 82px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+i{
+    left: -999999px;
+    position: relative;
+}
+
+#login-form{
+    background: linear-gradient(180deg,#307FB7, #084F81);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 1px 2px #000000;
+    -moz-box-shadow: 0 1px 2px #000000;
+    box-shadow: 0 1px 2px #000000;
+    color: #FFFFFF;
+    margin: auto auto 10px auto; /* Centralize the page */
+    padding: 50px 60px 70px 60px;
+    width: 300px; /* Fix the size of the page */
+}
+
+#body-login label{
+    color: #FFFFFF;
+    display: block;
+}
+
+.login-page-input{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.login-page-checkbox{
+
+}
+
+.login-page-forgot{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+.login-page-forgot:hover{
+    text-decoration: underline;
+}
+
+.login-page-button{
+    background-color: #0E6AAB;
+    border: #307FB7 2px outset;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+}
+
+#signup-link{
+    display: inline;
+    position: relative;
+    top: 30px;
+    font-weight: bold;
+}
+
+#signup-link a{
+    color: #E9CF47;
+    text-decoration: none;
+}
+
+#signup-link a:hover{
+    text-decoration: underline;
+}
+
+@-moz-document url-prefix(){
+    .login-page-button{
+        border-top-color: rgba(48, 124, 183, 0.2);
+        border-left-color: rgba(48, 124, 183, 0.2);
+        border-right-color: rgba(26, 68, 99, 0.6);
+        border-bottom-color: rgba(26, 68, 99, 0.6);
+        padding: 0.140em 2px;
+    }
+}
+
+#login-error{
+    color: #FF0000;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    margin-bottom: 10px;
+    position: relative;
+    top: 60px;
+}
+
+/*************************************
+**************************************
+    1   -   SIGNUP PAGE
+**************************************
+*************************************/
+
+#body-signup{
+    margin-top: 20px;
+}
+
+#body-signup-wrapper{
+    margin: auto; /* Centralize the page */
+    width: 996px; /* Fix the size of the page */
+}
+
+#logo-small-wrapper{
+    background: url("/images/Student-Valley-Logo-Small.png") no-repeat 0;
+    background-size: 100px 80px; /*  Need to reduce the size of logo */
+    height: 82px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+i{
+    left: -999999px;
+    position: relative;
+}
+
+#body-signup #signup{
+    background: linear-gradient(180deg,#307FB7, #084F81);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 1px 2px #000000;
+    -moz-box-shadow: 0 1px 2px #000000;
+    box-shadow: 0 1px 2px #000000;
+    color: #FFFFFF;
+    margin: auto auto 10px auto; /* Centralize the page */
+    padding: 50px 60px 70px 60px;
+    width: 300px; /* Fix the size of the page */
+}
+
+#body-signup label{
+    color: #FFFFFF;
+    display: block;
+}
+
+.signup-page-input{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.signup-page-button{
+    background-color: #0E6AAB;
+    border: #307FB7 2px outset;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+}
+
+#login-link{
+    display: inline;
+    position: relative;
+    top: 30px;
+    font-weight: bold;
+}
+
+#login-link a{
+    color: #E9CF47;
+    text-decoration: none;
+}
+
+#login-link a:hover{
+    text-decoration: underline;
+}
+
+@-moz-document url-prefix(){
+    .signup-page-button{
+        border-top-color: rgba(48, 124, 183, 0.2);
+        border-left-color: rgba(48, 124, 183, 0.2);
+        border-right-color: rgba(26, 68, 99, 0.6);
+        border-bottom-color: rgba(26, 68, 99, 0.6);
+        padding: 0.140em 2px;
+    }
+}
+
+#signup label.error {
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    margin-bottom: 10px;
+    color: #FF0000;
+}
+
+#signup-error{
+    color: #FF0000;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    margin-bottom: 10px;
+    position: relative;
+    top: 60px;
+}
+
+#signup-error a{
+    color: #E9CF47;
+    font-weight: bold;
+}

@@ -1,0 +1,213 @@
+#body{}
+
+#body-wrapper{
+    margin: auto; /* Centralize the page */
+    width: 996px; /* Fix the size of the page */
+}
+
+#body-a{
+    float: left;
+    width: 740px;
+}
+
+#headline-top{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 37px;
+    margin: 20px auto;
+    text-align: center;
+    text-shadow: 0 1px 0 #CCCCCC,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+#content{}
+
+.statement{
+    margin-bottom: 20px;
+}
+
+.picture{
+    float: left;
+    margin-right: 10px;
+}
+
+.definition{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+
+}
+
+.comment{
+    color: #666666;
+    float: left;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#body-b{
+    float: right;
+}
+
+table{
+    margin-top: 5px;
+}
+
+caption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 10px auto;
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+    0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.screenshot{
+
+}
+
+.screenshot img{
+    height: 114px;
+    width: 114px;
+    margin: 0 0 10px 10px;
+    border: 1px solid black;
+}
+
+#form{
+    background: -webkit-linear-gradient(180deg,#307FB7, #084F81);
+    background: -moz-linear-gradient(180deg,#307FB7, #084F81);
+    background: -ms-linear-gradient(180deg,#307FB7, #084F81);
+    background: -o-linear-gradient(180deg,#307FB7, #084F81);
+    background: linear-gradient(180deg,#307FB7, #084F81);
+    -webkit-box-shadow: 0 -1px 3px #000000;
+    -moz-box-shadow: 0 -1px 3px #000000;
+    box-shadow: 0 -1px 3px #000000;
+}
+
+#form-wrapper{
+    height: 90px;
+    margin: auto; /* Centralize the page */
+    padding: 5px;
+    width: 996px; /* Fix the size of the form */
+}
+
+#form td{
+    position: relative; /* To make the errors appear next to each other */
+}
+
+#form label.error{
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    position: absolute;
+    top: -80px;
+    right: 10px;
+    background: #E9CF47;
+    opacity: .9;
+    filter: alpha(opacity=90);
+    color: #FF0000;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    -moz-box-shadow: 0 0 7px #000000;
+    -webkit-box-shadow: 0 0 7px #000000;
+    box-shadow: 0 0 7px #000000;
+    border: 2px solid #FF0000;
+    padding: 5px 5px;
+    width: 135px;
+}
+
+#form label.error:before{
+    content: url("/images/Triangle.png");
+    position: absolute;
+    bottom: -36px;
+    left: 60px;
+    height: 36px;
+}
+
+#headline-bottom{
+    color: #E9CF47;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px; /* Space between headline and signup form */
+    text-align: center;
+}
+
+#signup{}
+
+#signup table{
+    color: #FFFFFF;
+    margin: auto;
+}
+
+#signup table th{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#signup table td{}
+
+.signup-input{
+    border-radius: 3px;
+    font-size: 13px;
+    margin: 1px 4px 1px 1px;
+}
+
+.signup-button{
+    background-color: #E9CF47;
+    border: #E9CF47 2px outset;
+    border-radius: 2px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 21px;
+    margin-left: 2px;
+}
+
+#error{
+    background: rgba(255, 0 ,0, .8);
+}
+
+#error-wrapper{
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: auto; /* Centralize error bar */
+    padding: 10px;
+    text-align: center;
+    width: 996px; /* Fix the size of error bar */
+}
+
+#error-wrapper a{
+    color: #E9CF47;
+    font-weight: bold;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+@-moz-document url-prefix(){
+    .signup-button{
+        border-top-color: rgba(233, 207, 71, 0.2);
+        border-left-color: rgba(233, 207, 71, 0.2);
+        /*border-right-color: rgba(26, 68, 99, 0.6);*/
+        /*border-bottom-color: rgba(26, 68, 99, 0.6);*/
+        height: 22px;
+        margin-left: 2px;
+        padding: 0.140em 2px;
+    }
+}

@@ -1,0 +1,1637 @@
+/*
+* This CSS file should be added pages, which have sidebar in it.
+*
+* This CSS file is for two column pages only.
+*
+* This CSS file contains the styles for pages that are gonna show up when user is logged in.
+*
+* In this CSS while styling, using general tags must be avoided. Because this file is used for
+* many other pages, as well. Otherwise, the pages are gonna be messed up.
+*
+* While styling, use unique id or class names before the general tags.
+*/
+
+/*************************************
+**************************************
+    0   -   PROFILE PAGE
+**************************************
+*************************************/
+
+.profile-title{
+    background-color: #307FB7;
+    color: #FFFFFF;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+    padding: 2px 0 2px 5px;
+}
+
+#profile-content-a{
+    background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);
+    border: 1px solid #bdc7d8;
+    padding: 0 5px;
+}
+
+#profile-content-a a{
+    color: #084F81;
+    text-decoration: none;
+}
+
+#profile-content-b{
+    background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);
+    border: 1px solid #bdc7d8;
+}
+
+#profile-content-c{
+    background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);
+    border: 1px solid #bdc7d8;
+}
+
+.profile-info{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.profile-info:first-child{
+    margin-top: 5px;
+}
+
+.profile-info span{
+    color: #666666;
+}
+
+.profile-item{
+    font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+    margin-top: 5px;
+}
+
+.profile-item:last-child{
+    margin-bottom: 5px;
+}
+
+.profile-item a{
+    color: #000000;
+    padding-left: 22px;
+    text-decoration: none;
+}
+
+.profile-item a:hover{
+    color: #307FB7;
+}
+
+.groups-logo{
+    background: url("/images/groups.png") no-repeat 4px 1px;
+    background-size: 14px 14px;
+}
+
+.courses-logo{
+    background: url("/images/courses.png") no-repeat 4px 1px;
+    background-size: 14px 14px;
+}
+
+#profile-a{
+    border-bottom: 1px solid #307FB7;
+}
+
+#profile-name{
+    /*background-color: deeppink;*/
+    font-size: 17px;
+    font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+    float: left;
+    margin-bottom: 6px; /* Put space between bottom line and name */
+    width: 540px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#profile-buttons li{
+    display: inline;
+    margin-left: 5px;
+}
+
+#profile-buttons{
+    /*background-color: aqua;*/
+    float: right;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#profile-buttons a{
+    border-top: 1px solid #777777;
+    background: #666666;
+    background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#666666));
+    background: -webkit-linear-gradient(top, #666666, #666666);
+    background: -moz-linear-gradient(top, #666666, #666666);
+    background: -ms-linear-gradient(top, #666666, #666666);
+    background: -o-linear-gradient(top, #666666, #666666);
+    padding: 2px 7px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: relative;
+    top: 2px;
+}
+
+#profile-buttons a:hover{
+    border-top-color: #307fb7;
+    background: #307fb7;
+    color: #ffffff;
+}
+
+#profile-b{}
+
+#profile-picture{
+    float: left;
+    margin: 5px 5px 0 0;
+    width: 158px;
+}
+
+#profile-picture img{
+    height: 158px;
+    width: 158px;
+}
+
+#profile-c{
+    float: left;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    height: 150px;
+    width: 602px;
+    /*background-color: deeppink;*/
+}
+
+#profile-d{
+    /*background-color: deepskyblue;*/
+    float: left;
+    margin-right: 5px;
+    width: 380px;
+}
+
+#profile-e{
+    /*background-color: darkgreen;*/
+    float: left;
+    font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+    width: 380px;
+}
+
+@-moz-document url-prefix(){
+    #profile-buttons a{
+        position: relative;
+        top: 1px
+    }
+}
+
+/*************************************
+**************************************
+    1   -   CONNECTIONS PAGE
+**************************************
+*************************************/
+
+#conn-a{
+    /*width: 765px; *//* This is the available space for right side content */
+}
+
+#conn-b{
+    /*width: 765px; *//* This is the available space for right side content */
+}
+
+.conn-title{
+    background-color: #307FB7;
+    color: #FFFFFF;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px; /* Put space between bottom line and name */
+    padding: 2px 0 2px 5px;
+}
+
+.conn-content{
+}
+
+#conn-find{
+    float: right;
+    padding-right: 8px;
+}
+
+.conn-find-item{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 3px;
+}
+
+.conn-find-item:hover{
+    background-color: #0E6AAB;
+}
+
+.conn-request{
+    background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);
+    border: 1px solid #bdc7d8;
+    margin-bottom: 5px; /* Leave space between requests */
+    height: 80px;
+}
+
+.conn-picture{
+    float: left;
+    height: 80px;
+    width: 80px;
+}
+
+.conn-name{
+    /*background-color: deepskyblue;*/
+    margin-left: 5px;
+    color: #000000;
+    float: left;
+    font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+    width: 673px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.conn-name a{
+    font-weight: bold;
+    color: #307FB7;
+    text-decoration: none;
+}
+
+.conn-name a:hover{
+    text-decoration: underline;
+}
+
+#conn-details{
+    margin-left: 5px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 430px;
+}
+
+.conn-school{
+    margin-top: 5px;
+}
+
+.conn-program{
+    margin-top: 5px;
+}
+
+#conn-buttons{
+    height: 20px;
+    float: right;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#conn-buttons a{
+    border-top: 1px solid #777777;
+    background: #666666;
+    background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#666666));
+    background: -webkit-linear-gradient(top, #666666, #666666);
+    background: -moz-linear-gradient(top, #666666, #666666);
+    background: -ms-linear-gradient(top, #666666, #666666);
+    background: -o-linear-gradient(top, #666666, #666666);
+    padding: 2px 7px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    vertical-align: middle;
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+#conn-buttons a:hover{
+    border-top-color: #307fb7;
+    background: #307fb7;
+    color: #ffffff;
+}
+
+#conn-buttons li{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/*************************************
+**************************************
+    2   -   SETTINGS PAGE
+**************************************
+*************************************/
+
+.settings-title{
+    background-color: #307FB7;
+    color: #FFFFFF;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    font-weight: bold;
+    padding: 2px 0 2px 5px;
+}
+
+.settings-subtitle{
+    font-size: 12px;
+    opacity: 0.5;
+    text-align: center;
+    width: 330px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    margin-bottom: 10px;
+}
+
+.settings-subtitle-2{
+    margin-top: 20px;
+}
+
+.settings-content{
+    background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);
+    border: 1px solid #bdc7d8;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    margin: 5px 0;
+    padding: 5px 5px 20px 5px;
+}
+
+.settings-button{
+    background-color: #0E6AAB;
+    border: #307FB7 2px outset;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    left: 120px;
+    top: 12px;
+}
+
+
+@-moz-document url-prefix(){
+    .settings-button{
+        border-top-color: rgba(48, 124, 183, 0.2);
+        border-left-color: rgba(48, 124, 183, 0.2);
+        border-right-color: rgba(26, 68, 99, 0.6);
+        border-bottom-color: rgba(26, 68, 99, 0.6);
+        padding: 0.140em 2px;
+    }
+}
+
+.settings-input{
+    float: right;
+    height: 22px;
+    margin: 2px 0;
+    position: relative;
+    right: 400px;
+    width: 150px;
+}
+
+.settings-label{
+    clear: both;
+    display: block;
+}
+
+#settings-a{}
+
+#settings-a span{
+    position: relative;
+    top: 3px;
+}
+
+#settings-picture{
+    margin: 5px 0;
+}
+
+#settings-picture-a{
+    float: left;
+    height: 80px;
+    width: 80px;
+}
+
+#settings-picture-b{
+    float: left;
+}
+
+#settings-picture-b-1{
+    margin-left: 5px;
+}
+
+#settings-picture-b-2{
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#settings-picture-c{}
+
+#settings-information{
+    margin-top: 5px;
+}
+
+#settings-information-a{}
+
+#settings-information-b{}
+
+#settings-b{}
+
+#settings-b span{
+    position: relative;
+    top: 3px;
+}
+
+#settings-email{
+    margin: 5px 0;
+}
+
+#settings-email-a{}
+
+#settings-email-b{}
+
+#settings-password{
+    margin-top: 5px;
+}
+
+#settings-password-a{}
+
+#settings-password-b{}
+
+.error_picture{
+    color: #FF0000;
+}
+
+.feedback_picture{
+    color: #6BB72C;
+}
+
+#settings-email .error_message{
+    color: #FF0000;
+    position: relative;
+    left: 290px;
+    top: 3px;
+}
+
+#settings-email .feedback_message{
+    color: #6BB72C;
+    position: relative;
+    left: 290px;
+    top: 3px;
+}
+
+#settings-password .error_message{
+    color: #FF0000;
+    position: relative;
+    left: 200px;
+    top: 3px;
+}
+
+#settings-password .feedback_message{
+    color: #6BB72C;
+    position: relative;
+    left: 200px;
+    top: 3px;
+}
+
+#currentPassword-error{
+    color: #FF0000;
+    position: relative;
+    left: 200px;
+    top: 3px;
+}
+
+#settings-information label.error{
+    color: #FF0000;
+    position: relative;
+    left: 250px;
+    top: 3px;
+}
+
+#settings-email label.error{
+    color: #FF0000;
+    position: relative;
+    left: 290px;
+    top: 3px;
+}
+
+#newPassword-error{
+    color: #FF0000;
+    position: relative;
+    left: 220px;
+    top: 3px;
+}
+
+#newPasswordAgain-error{
+    color: #FF0000;
+    position: relative;
+    left: 160px;
+    top: 3px;
+}
+
+/*************************************
+**************************************
+    3   -   GROUP PAGE !.NOT GROUPS.!
+**************************************
+*************************************/
+
+#group-a{
+    border-bottom: 1px solid #307FB7;
+}
+
+#group-name{
+    /*background-color: deeppink;*/
+    font-size: 17px;
+    font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+    float: left;
+    margin-bottom: 6px; /* Put space between bottom line and name */
+    width: 560px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#group-buttons{
+    /*background-color: aqua;*/
+    float: right;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#group-buttons a{
+    border-top: 1px solid #777777;
+    background: #666666;
+    background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#666666));
+    background: -webkit-linear-gradient(top, #666666, #666666);
+    background: -moz-linear-gradient(top, #666666, #666666);
+    background: -ms-linear-gradient(top, #666666, #666666);
+    background: -o-linear-gradient(top, #666666, #666666);
+    padding: 2px 7px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: relative;
+    top: 3px
+}
+
+#group-buttons a:hover{
+    border-top-color: #307fb7;
+    background: #307fb7;
+    color: #ffffff;
+}
+
+@-moz-document url-prefix(){
+    #group-buttons a{
+        position: relative;
+        top: 1px
+    }
+}
+
+#group-buttons li{
+    display: inline;
+    margin-left: 5px;
+}
+
+#group-b{
+    border-color: #bdc7d8;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    margin-top: 5px;
+}
+
+#group-b img{
+    height: 163px;
+    width: 763px;
+}
+
+#group-c{
+    background-color: #FFFFFF;
+    border: 1px solid #bdc7d8;
+}
+
+#group-menu{
+    float: left;
+    width: 530px;
+}
+
+#group-menu ul{
+    height: 30px;
+}
+
+#group-menu li{
+    display: inline;
+    position: relative;
+    float: left;
+    top: 7px;
+}
+
+#group-menu a{
+    color: #000000;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    padding: 6px 6px 6px 22px;
+    text-decoration: none;
+}
+
+#group-menu a:hover{
+    -webkit-box-shadow: inset 0 1px 3px #666666;
+    -moz-box-shadow: inset 0 1px 3px #666666;
+    box-shadow: inset 0 1px 3px #666666;
+}
+
+#group-icon-1{
+    background: url("/images/Feeds.png") no-repeat 5px 1px;
+    background-size: 14px 14px;
+}
+
+#group-icon-2{
+    background: url("/images/Post.png") no-repeat 5px 1px;
+    background-size: 14px 14px;
+}
+#group-icon-3{
+    background: url("/images/Members.png") no-repeat 5px 1px;
+    background-size: 14px 14px;
+}
+#group-icon-4{
+    background: url("/images/Manage.png") no-repeat 5px 1px;
+    background-size: 14px 14px;
+}
+
+#group-d{
+    width: 200px;
+    float: right;
+}
+
+#group-search-bar{
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+
+#group-search-bar input{
+    background: url("/images/Search-Icon.png") rgba(203, 203, 203, 0.50) no-repeat right;
+    background-size: 38px 38px;
+    border: 1px solid #bdc7d8;
+    border-radius: 5px;
+    color: #757575;
+    height: 26px;
+    outline: none;
+    width: 200px;
+    font-size: 14px;
+}
+
+#group-d ::-webkit-input-placeholder {
+    color: #757575;
+}
+
+#group-d :-moz-placeholder { /* Firefox 18- */
+    color: #757575;
+}
+
+#group-d ::-moz-placeholder {  /* Firefox 19+ */
+    color: #000000; /* #000000 is gonna turn to #757575 (There is some kind of built-in opacity in firefox)*/
+}
+
+#group-d :-ms-input-placeholder {
+    color: #757575;
+}
+
+#group-e{
+    margin-top: 10px;
+}
+
+#toggle-editor{
+    display: none;
+}
+
+#pinButton{
+    margin: 5px 0 10px 0;
+    float: right;
+}
+
+#group-e #pinButton input{
+    background-color: #0E6AAB;
+    border: #307FB7 2px outset;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0; /*To remove 1px margin around the button in safari*/
+}
+
+#group-f{}
+
+#group-pin{
+    border: 1px solid #bdc7d8;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#group-pin-info{
+    /*background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);*/
+    /*border-style: solid;*/
+    /*border-color: #bdc7d8;*/
+    /*border-width: 1px 0 1px 1px;*/
+    font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+    width: 691px;
+    float: left;
+}
+
+#group-pin-pic{
+    float: left;
+    margin-right: 5px;
+}
+
+#group-pin-name{}
+
+#group-pin-name a{
+    color: #307FB7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#group-pin-date{
+    opacity: 0.5;
+    /*background-color: red;*/
+}
+
+#group-pin-vote{
+    float: right;
+    background: linear-gradient(180deg,#307FB7, #296897);
+    border-radius: 2px;
+    /*border-style: solid;*/
+    /*border-color: #bdc7d8;*/
+    /*border-width: 1px 1px 1px 0;*/
+    color: #FFFFFF;
+    text-align: center;
+    height: 32px;
+    width: 40px;
+}
+
+.pin-votes{
+    vertical-align: -20px;
+}
+
+#group-pin-content{
+    margin: 10px 0 15px 0;
+    line-height: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+}
+
+#group-pin-content table, #group-pin-content tr, #group-pin-content td, #group-pin-content th{
+    border: 1px solid #000000;
+}
+
+#group-pin-content ol, #group-pin-content ul, #group-pin-content li{
+    margin: 0 20px;
+    padding-left: 0;
+}
+
+#group-pin-content ol{
+    list-style: decimal;
+}
+
+#group-pin-content ul{
+    list-style: disc;
+}
+
+#group-pin-buttons{
+    /*background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);*/
+    border-style: solid;
+    border-color: #bdc7d8;
+    /*border-width: 1px;*/
+    border-bottom-width: 1px;
+    padding: 0 5px 5px 5px;
+    margin: -5px;
+}
+
+#group-pin-buttons-a{
+    float: left;
+}
+
+#group-pin-buttons-a a{
+    background-repeat: no-repeat;
+    background-size: 16px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+#group-upvote-button{
+    background-image: url("/images/Upvote.png");
+    display: block;
+}
+
+#group-downvote-button{
+    background-image: url("/images/Downvote.png");
+    display: block;
+}
+
+#group-pin-buttons-b{
+    float: right;
+}
+
+#group-pin-buttons-b a{
+    background-repeat: no-repeat;
+    background-size: 16px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+#group-edit-button{
+    background-image: url("/images/Edit.png");
+    display: block;
+}
+
+#group-delete-button{
+    background-image: url("/images/Delete.png");
+    display: block;
+}
+
+#group-pin-comments{
+    background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);
+    /*margin-top: 10px;*/
+    margin: 10px -5px -5px -5px;
+    padding: 1px 5px 5px 5px;
+}
+
+#group-pin-comments-a{
+    /*background-color: deeppink;*/
+    font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+    width: 753px;
+    float: left;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+#group-comment-pic{
+    float: left;
+    margin-right: 5px;
+}
+
+#group-comment-info{
+    float: left;
+    height: 16px;
+    width: 716px;
+    /*background-color: purple;*/
+}
+
+#group-comment-name{
+    float: left;
+    /*background-color: greenyellow;*/
+}
+
+#group-comment-name a{
+    color: #307FB7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#group-comment-date{
+    font-size: 11px;
+    float: right;
+    /*background-color: deeppink;*/
+    opacity: 0.5;
+    border-bottom: 1px dotted #000000;
+}
+
+#group-comment-bottom{
+    /*background-color: deepskyblue;*/
+    width: 716px;
+    float: left;
+}
+
+#group-comment-content{
+    /*background-color: deeppink;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#group-comment-buttons{
+    /*background-color: deeppink;*/
+
+}
+
+#group-comment-buttons-a{
+    float: left;
+    /*background-color: aqua;*/
+}
+
+#group-comment-buttons-b{
+    height: 16px;
+    float: left;
+    /*background-color: greenyellow;*/
+}
+
+#group-comment-buttons-c{
+    float: right;
+    /*background-color: deeppink;*/
+}
+
+#group-comment-buttons-a a{
+    background-repeat: no-repeat;
+    background-size: 16px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+#group-comment-buttons-b a{}
+
+#group-comment-buttons-c a{
+    background-repeat: no-repeat;
+    background-size: 16px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+#group-comment-vote{
+    font-size: 12px;
+    margin-left: 5px;
+    /*background: linear-gradient(180deg,#307FB7, #296897);*/
+    border: 1px solid #307FB7;
+    border-radius: 2px;
+    color: #307FB7;
+    text-align: center;
+    height: 12px;
+    width: 40px;
+    padding: 1px 0;
+}
+
+.comment-votes{
+
+}
+
+#group-pin-comments-b{
+    float: left;
+}
+
+#group-pin-comments-c{
+    float: left;
+    margin-left: 5px;
+}
+
+#group-pin-comments input, #group-pin-comments select, #group-pin-comments textarea {
+    margin: 0;
+    padding: 0;
+    font-size: 0.85em;
+    outline: none;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+#group-comment-form textarea{
+    height: 32px;
+    min-height: 32px;
+    width: 716px;
+    max-width: 716px;
+    border: 1px solid #bdc7d8;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none; /* Remove resize handler */
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 7px 0;
+}
+
+#group-comment-form ::-webkit-input-placeholder {
+    color: #757575;
+}
+
+#group-comment-form :-moz-placeholder { /* Firefox 18- */
+    color: #757575;
+}
+
+#group-comment-form ::-moz-placeholder {  /* Firefox 19+ */
+    color: #000000; /* #000000 is gonna turn to #757575 (There is some kind of built-in opacity in firefox)*/
+}
+
+#group-comment-form :-ms-input-placeholder {
+    color: #757575;
+}
+
+#group-comment-form :focus::-webkit-input-placeholder { color:transparent; }
+#group-comment-form :focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+#group-comment-form :focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+#group-comment-form :focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+@-moz-document url-prefix(){
+    #group-e #pinButton input{
+        border-top-color: rgba(48, 124, 183, 0.2);
+        border-left-color: rgba(48, 124, 183, 0.2);
+        border-right-color: rgba(26, 68, 99, 0.6);
+        border-bottom-color: rgba(26, 68, 99, 0.6);
+        padding: 0.140em 2px;
+    }
+
+    #group-comment-form input[type=submit]{
+        border-top-color: rgba(48, 124, 183, 0.2);
+        border-left-color: rgba(48, 124, 183, 0.2);
+        border-right-color: rgba(26, 68, 99, 0.6);
+        border-bottom-color: rgba(26, 68, 99, 0.6);
+        /*padding: auto 3px;*/
+    }
+}
+
+/*************************************
+**************************************
+    4   -   BOOKS PAGE !.NOT BOOK.!
+**************************************
+*************************************/
+
+#books-menu{
+    background-color: #FFFFFF;
+    border-color: #307FB7;
+    border-style: solid;
+    border-bottom-width: 1px;
+}
+
+#books-menu ul{
+    height: 22px;
+    float: left;
+}
+
+#books-menu li{
+    display: inline;
+}
+
+#books-menu  li:after{
+    color: #307FB7;
+    content: "|";
+    padding-left: 4px;
+}
+
+#books-menu  li:last-child:after{
+    content: "";
+}
+
+#books-menu a{
+    color: #000000;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    padding: 0 6px 0 25px;
+    text-decoration: none;
+}
+
+#books-menu a:hover{
+    -webkit-box-shadow: inset 0 1px 3px #666666;
+    -moz-box-shadow: inset 0 1px 3px #666666;
+    box-shadow: inset 0 1px 3px #666666;
+}
+
+#books-icon-1{
+    background: url("/images/Last-Books.png") no-repeat 5px 2px;
+    background-size: 14px 14px;
+}
+
+#books-icon-2{
+    background: url("/images/Post-Ad.png") no-repeat 5px 2px;
+    background-size: 14px 14px;
+}
+
+#books-icon-3{
+    background: url("/images/My-Ads.png") no-repeat 5px 2px;
+    background-size: 14px 14px;
+}
+
+#books-bar{
+    /*background-color: greenyellow;*/
+}
+
+#books-bar li{
+    display: inline;
+    margin-left: 5px;
+}
+
+#books-search-bar{
+    /*background-color: deeppink;*/
+    width: 575px;
+    margin: auto;
+}
+
+#books-search-box{
+    height: 20px;
+    width: 300px;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 14px;
+    outline: none;
+    background: url("/images/Search-Icon.png") rgba(203, 203, 203, 0.50) no-repeat right;
+    background-size: 32px 32px;
+    border: 1px solid #bdc7d8;
+}
+
+#books-search-bar ::-webkit-input-placeholder {
+    color: #757575;
+}
+
+#books-search-bar :-moz-placeholder { /* Firefox 18- */
+    color: #757575;
+}
+
+#books-search-bar ::-moz-placeholder {  /* Firefox 19+ */
+    color: #000000; /* #000000 is gonna turn to #757575 (There is some kind of built-in opacity in firefox)*/
+}
+
+#books-search-bar :-ms-input-placeholder {
+    color: #757575;
+}
+
+#books-dropdown{
+    width: 200px;
+    font-size: 16px;
+    margin: 10px 0; /*Space between menu and table (Using #books-bar doesn't work)*/
+}
+
+#books-button{
+    vertical-align: top;
+    font-size: 10px;
+    background-color: #0E6AAB;
+    border: #307FB7 1px outset;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    padding: 3px 10px;
+}
+
+@-moz-document url-prefix(){
+    #books-button{
+        border-top-color: rgba(48, 124, 183, 0.2);
+        border-left-color: rgba(48, 124, 183, 0.2);
+        border-right-color: rgba(26, 68, 99, 0.6);
+        border-bottom-color: rgba(26, 68, 99, 0.6);
+        padding: 2px 8px;
+    }
+}
+
+#books-ads{}
+
+#books-ads table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+#books-ads thead{
+    background-color: #307FB7;
+    color: #FFFFFF;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+}
+
+#books-ads thead th{
+    height: 22px;
+}
+
+#books-ads table, #books-ads tr, #books-ads td, #books-ads th{
+    border: 1px solid #bdc7d8;
+}
+
+#books-ads tbody{
+    text-align: center;
+}
+
+#books-ads tbody td{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#books-post-school{
+    width: 15%;
+}
+
+
+#tbody td{
+    text-align: left;
+}
+
+#books-post-date{
+    width: 15%;
+}
+
+#books-post-title{
+    width: 55%;
+}
+
+#books-title a{
+    color: #084F81;
+    text-decoration: none;
+}
+
+#books-title a:hover{
+    color: #307FB7;
+}
+
+#books-post-price{
+    width: 10%;
+}
+
+/*************************************
+**************************************
+    5   -   BOOK PAGE !.NOT BOOKS.!
+**************************************
+*************************************/
+
+#book-a{
+    border-bottom: 1px solid #307FB7;
+}
+
+#book-name{
+    /*background-color: deeppink;*/
+    font-size: 17px;
+    font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+    float: left;
+    margin-bottom: 6px;
+    width: 662px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#book-button li{
+    display: inline;
+}
+
+#book-button{
+    /*background-color: aqua;*/
+    float: right;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#book-button a{
+    border-top: 1px solid #777777;
+    background: #666666;
+    background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#666666));
+    background: -webkit-linear-gradient(top, #666666, #666666);
+    background: -moz-linear-gradient(top, #666666, #666666);
+    background: -ms-linear-gradient(top, #666666, #666666);
+    background: -o-linear-gradient(top, #666666, #666666);
+    padding: 2px 7px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: relative;
+    top: 4px;
+}
+
+#book-button a:hover{
+    border-top-color: #307fb7;
+    background: #307fb7;
+    color: #ffffff;
+}
+
+@-moz-document url-prefix(){
+    #book-button a{
+        position: relative;
+        top: 4px;
+    }
+}
+
+#book-b{
+    margin-top: 5px;
+}
+
+#book-picture{
+    border: 1px solid #bdc7d8;
+    width: 300px;
+    height: 300px;
+    background-color: #e0e0e0;
+
+    display: table-cell; /* Centralize pic vertically */
+    vertical-align: middle; /* Centralize pic vertically */
+}
+
+#book-picture img{
+    max-width: 298px;
+    max-height: 298px;
+
+    display: block; /* Centralize pic horizontally */
+    margin: auto; /* Centralize pic horizontally */
+}
+
+#book-c{
+    width: 302px;
+    font-family: 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+}
+
+.book-title{
+    background-color: #307FB7;
+    color: #FFFFFF;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+    padding: 2px 0 2px 5px;
+}
+
+#book-info-content{
+    border: 1px solid #bdc7d8;
+    background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);
+    padding: 5px;
+}
+
+#book-info-content a{
+    color: #084F81;
+    text-decoration: none;
+}
+
+.book-info{
+    font-size: 15px;
+    margin-bottom: 2px;
+    line-height: 19px; /* overflow, white-space cuts bottom of g, p etc.. (To avoid that)*/
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.book-info:last-child{
+    margin-bottom: 0;
+}
+
+.book-info span{
+    color: #666666;
+}
+
+#book-wrapper{
+    float: left;
+}
+
+#book-d{
+    float: right;
+    width: 458px;
+}
+
+#book-details{
+    border: 1px solid #bdc7d8;
+    background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);
+    padding: 5px;
+    min-height: 429px;
+    line-height: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+}
+
+/*************************************
+**************************************
+    5   -   MY-ADS PAGE
+**************************************
+*************************************/
+
+#my-ads-block{
+    width: 251px;
+    margin-right: 6px;
+    float: left;
+}
+
+#my-ads-block:nth-child(3n){
+    margin-right: 0;
+}
+
+#my-ads-name{
+    background-color: #307FB7;
+    color: #FFFFFF;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    padding: 2px 0 2px 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#my-ads-name a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#my-ads-name:hover{
+    background-color: #0E6AAB;
+}
+
+#my-ads-content{
+    background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);
+    border: 1px solid #bdc7d8;
+}
+
+#my-ads-picture{
+    width: 249px;
+    height: 209px;
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #bdc7d8;
+
+    display: table-cell; /* Centralize pic vertically */
+    vertical-align: middle; /* Centralize pic vertically */
+}
+
+#my-ads-picture img{
+    max-width: 249px;
+    max-height: 208px; /* 1px less because of the border at the bottom of page */
+
+    display: block; /* Centralize pic horizontally */
+    margin: auto; /* Centralize pic horizontally */
+}
+
+#my-ads-menu{
+    padding: 5px;
+}
+
+.my-ads-buttons{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.my-ads-buttons:first-child{
+    margin-top: 5px;
+}
+
+.my-ads-buttons span{
+    color: #666666;
+}
+
+.my-ads-buttons a{
+    color: #084F81;
+    text-decoration: none;
+}
+
+/*************************************
+**************************************
+    6   -   POST-AD PAGE
+**************************************
+*************************************/
+
+#post-ad-title{
+    background-color: #307FB7;
+    color: #FFFFFF;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 2px 0 2px 5px;
+}
+
+#post-ad-content{
+    background: linear-gradient(180deg,#FFFFFF, #F2F2F2, #E5E5E5);
+    border: 1px solid #bdc7d8;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+#post-ad-error{
+    background: url("/images/Warning-Sign.png") no-repeat 5px;
+    background-size: 28px 28px;
+    padding: 5px 5px 5px 40px;
+    color: #D63301;
+    background-color: #FFCCBA;
+    border: 1px solid #D63301;
+    margin-bottom: 10px;
+    width: 417px;
+}
+
+#post-ad-error span{
+    background: url("/images/Dot.png") no-repeat 3px;
+    background-size: 5px 5px;
+    padding: 5px 5px 5px 15px;
+    font-size: 14px;
+    display: block;
+}
+
+#post-ad-subtitle{
+    font-size: 12px;
+    opacity: 0.5;
+    text-align: center;
+    width: 330px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    margin-bottom: 10px;
+}
+
+#post-ad-form{
+
+}
+
+#post-ad-form-a{
+    float: left;
+    height: 80px;
+    width: 80px;
+}
+
+#post-ad-form-b{
+    float: left;
+}
+
+#post-ad-form-b-1{
+    margin-left: 5px;
+}
+
+#post-ad-form-b-2{
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.post-ad-input{
+    float: right;
+    height: 22px;
+    margin: 2px 0;
+    position: relative;
+    right: 530px;
+    width: 150px;
+}
+
+.post-ad-input-2{
+    border: 1px solid #bdc7d8;
+    position: relative;
+    right: 288px; /* How far from right */
+    width: 392px;
+}
+
+.post-ad-input-3{
+    border: 1px solid #bdc7d8;
+}
+
+.post-ad-input-3:focus{
+    outline: 0;
+}
+
+.post-ad-input-2:focus{
+    outline: 0;
+}
+
+.post-ad-label{
+    clear: both;
+    display: block;
+}
+
+#post-ad-information label span{
+    position: relative;
+    top: 3px;
+}
+
+#post-ad-form-c{
+    line-height: 130%;
+    margin-top: 2px;
+}
+
+#post-ad-form-d{
+    margin-top: 5px;
+    width: 465px;
+}
+
+#post-ad-form-d-1{
+    width: 88px;
+    margin: auto;
+}
+
+.post-ad-button{
+    background-color: #0E6AAB;
+    border: #307FB7 2px outset;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+@-moz-document url-prefix(){
+    .post-ad-button{
+        border-top-color: rgba(48, 124, 183, 0.2);
+        border-left-color: rgba(48, 124, 183, 0.2);
+        border-right-color: rgba(26, 68, 99, 0.6);
+        border-bottom-color: rgba(26, 68, 99, 0.6);
+        padding: 0.140em 2px;
+    }
+}

@@ -1,0 +1,152 @@
+/*
+* This CSS file should be added pages that has header page in it.
+*
+* All the header CSS kept in this css file.
+*
+* This file is different from header-global.css.
+*/
+
+html {overflow-y: scroll;}
+
+#container{
+    margin: auto;
+    min-height: 470px; /* Keep the footer under sidebar and content */
+    width: 996px;
+}
+
+#content{
+    width: 765px;
+    margin-top: 20px;
+    margin-left: 10px;
+    float: left;
+}
+
+#header{
+    background: linear-gradient(180deg,#307FB7, #084F81);
+    -webkit-box-shadow: 0 1px 2px #000000;
+    -moz-box-shadow: 0 1px 2px #000000;
+    box-shadow: 0 1px 2px #000000;
+}
+
+#header-wrapper{
+    height: 40px;
+    margin: auto; /* Centralize blue bar */
+    width: 996px; /* Fix the size of blue bar */
+}
+
+#header-a{
+    float: left;
+}
+
+#logo-wrapper{
+
+}
+
+#logo{
+    background: url("/images/Student-Valley-Logo-Big.png") no-repeat 0;
+    background-size: 200px 50px;
+    cursor: pointer;
+    font-size: 42px;
+    letter-spacing: -0.080em; /* To wrap up the logo with anchor */
+}
+
+#logo-wrapper u{
+    left: -999999px;
+    position: relative;
+}
+
+#header-b{
+    float: left;
+}
+
+#search-bar{
+
+}
+
+#search-bar input{
+    background: url("/images/Search-Icon-2.png") #307FB7 no-repeat right;
+    background-size: 38px 38px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    height: 26px;
+    margin-top: 8px;
+    outline: none;
+    margin-left: 20px; /* Distance between search bar and logo */
+    width: 320px;
+}
+
+::-webkit-input-placeholder {
+    color: #A0C4D9;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #FFFFFF;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #FFFFFF; /* #FFFFFF is gonna turn to #A0C4D9 (There is some kind of built-in opacity in firefox)*/
+}
+
+:-ms-input-placeholder {
+    color: #A0C4D9;
+}
+
+#header-c{
+    float: right;
+}
+
+#nav{
+    margin-top: 12px;
+}
+
+#nav ul{
+
+}
+
+#nav li{
+    background-color: inherit;
+    display: inline-block;
+    padding: 0 2px;
+}
+
+#nav li:after{
+    color: #084F81;
+    content: "|";
+    padding-left: 8px;
+}
+
+#nav li:last-child:after{
+    content: "";
+    padding-left: 0;
+}
+
+#nav a{
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: "helvetica neue",helvetica,arial,"lucida grande",sans-serif;
+    padding: 2px 6px;
+    text-decoration: none;
+    text-shadow: #000000 2px 2px;
+}
+
+#nav a:hover{
+    -webkit-box-shadow: inset 0 5px 10px #084F81;
+    -moz-box-shadow: inset 0 5px 10px #084F81;
+    box-shadow: inset 0 5px 10px #084F81;
+}
+
+#nav a:active{
+    background-color: #307FB7;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
